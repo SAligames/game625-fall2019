@@ -273,9 +273,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59625f2797e95074583f866ccbe25806, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flatness: 2.53
-  frequency: 5.96
-  octaves: 1
+  flatness: 3.91
+  frequency: 4.2
+  octaves: 2
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0

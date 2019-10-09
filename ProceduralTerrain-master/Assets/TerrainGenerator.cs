@@ -33,7 +33,7 @@ public class TerrainGenerator : MonoBehaviour
                 float x = j / (float)terrain.terrainData.heightmapWidth;
                 float y = i / (float)terrain.terrainData.heightmapHeight;
                 float height = image.GetPixel(i,j).b;
-                /* Perlin Noise Version
+               
                 float currency_frequency = frequency;                
                 float amplitude = 1;
                 for(int z=0;z<octaves;++z)
@@ -41,7 +41,7 @@ public class TerrainGenerator : MonoBehaviour
                     height=height+Mathf.PerlinNoise(x * frequency, y * frequency)*amplitude;
                     amplitude /= 2;
                     currency_frequency *= 2;
-                }*/
+                }
                 float heightP = Mathf.PerlinNoise(x * frequency, y * flatness);
                 heightmap[i, j] = height / flatness + Random.Range(0f, 0.01f);
             }
